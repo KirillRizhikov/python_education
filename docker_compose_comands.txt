@@ -1,0 +1,26 @@
+Запускаем сервисы db и pgadmin, используя команду:
+docker-compose --env-file ./.env.list up -d
+
+Копируем файлы (pagila-schema.sql, pagila-insert-data.sql) учебной базы данных в контейнер сервиса db:
+docker cp ./pagila-schema.sql pgdev-project_db_1:/usr/src/pagila-schema.sql
+docker cp ./pagila-insert-data.sql pgdev-project_db_1:/usr/src/pagila-insert-data.sql
+
+Создаем учебную базу данных с помощью команды docker-compose exec:
+docker-compose --env-file ./.env.list exec db psql -U postgres -c "CREATE DATABASE pagila;"
+
+И последовательно запускаем файлы pagila-schema.sql, pagila-insert-data.sql:
+docker-compose --env-file ./.env.list exec db psql -U postgres -d pagila -f /usr/src/pagila-schema.sql
+docker-compose --env-file ./.env.list exec db psql -U postgres -d pagila -f /usr/src/pagila-insert-data.sql
+
+Проверяем, что учебная база была успешно добавлена. Для этого открываем в браузере pgAdmin по адресу http://localhost:8080/
+
+docker ps
+
+
+sudo docker cp ./cart_products.csv shop_bd_db_1:/usr/src/cart_products.csv
+sudo docker cp ./carts.csv shop_bd_db_1:/usr/src/carts.csv
+sudo docker cp ./categories.csv shop_bd_db_1:/usr/src/categories.csv
+sudo docker cp ./orders.csv shop_bd_db_1:/usr/src/orders.csv
+sudo docker cp ./order_statuses.csv shop_bd_db_1:/usr/src/order_statuses.csv
+sudo docker cp ./products.csv shop_bd_db_1:/usr/src/products.csv
+sudo docker cp ./users.csv shop_bd_db_1:/usr/src/users.csv
