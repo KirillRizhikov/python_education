@@ -1,0 +1,375 @@
+1,ILX,19
+2,MDX,19
+3,MDX Sport Hybrid,19
+4,NSX,19
+5,RDX,19
+6,RLX,19
+7,RLX Sport Hybrid,19
+8,TLX,19
+9,4C Spider,25
+10,Giulia,25
+11,Stelvio,25
+12,A3,3
+13,A4,3
+14,A5,3
+15,A6,3
+16,A6 allroad,3
+17,A7,3
+18,Q3,3
+19,Q5,3
+20,Q7,3
+21,Q8,3
+22,R8,3
+23,S4,3
+24,S8,3
+25,SQ5,3
+26,TT,3
+27,2 Series,34
+28,3 Series,34
+29,4 Series,34
+30,5 Series,34
+31,7 Series,34
+32,8 Series,34
+33,M2,34
+34,X1,34
+35,X2,34
+36,X3,34
+37,X3 M,34
+38,X4,34
+39,X5,34
+40,X6,34
+41,X7,34
+42,Z4,34
+43,Enclave,15
+44,Encore,15
+45,Encore GX,15
+46,Envision,15
+47,Regal Sportback,15
+48,Regal TourX,15
+49,CT4,6
+50,CT5,6
+51,CT6,6
+52,CT6-V,6
+53,Escalade,6
+54,Escalade ESV,6
+55,XT4,6
+56,XT5,6
+57,XT6,6
+58,Blazer,10
+59,Bolt EV,10
+60,Camaro,10
+61,Colorado Crew Cab,10
+62,Colorado Extended Cab,10
+63,Corvette,10
+64,Equinox,10
+65,Express 2500 Cargo,10
+66,Express 3500 Cargo,10
+67,Impala,10
+68,Malibu,10
+69,Silverado 1500 Crew Cab,10
+70,Silverado 1500 Double Cab,10
+71,Silverado 1500 Regular Cab,10
+72,Silverado 2500 HD Crew Cab,10
+73,Silverado 2500 HD Double Cab,10
+74,Silverado 3500 HD Crew Cab,10
+75,Sonic,10
+76,Spark,10
+77,Suburban,10
+78,Tahoe,10
+79,Traverse,10
+80,Trax,10
+81,300,21
+82,Pacifica,21
+83,Pacifica Hybrid,21
+84,Voyager,21
+85,Challenger,2
+86,Charger,2
+87,Durango,2
+88,Grand Caravan Passenger,2
+89,Journey,2
+90,124 Spider,32
+91,500L,32
+92,500X,32
+93,EcoSport,1
+94,Edge,1
+95,Escape,1
+96,Expedition,1
+97,Expedition MAX,1
+98,Explorer,1
+99,F150 Regular Cab,1
+100,F150 Super Cab,1
+101,F150 SuperCrew Cab,1
+102,F250 Super Duty Crew Cab,1
+103,F250 Super Duty Regular Cab,1
+104,F250 Super Duty Super Cab,1
+105,F350 Super Duty Crew Cab,1
+106,F350 Super Duty Super Cab,1
+107,F450 Super Duty Crew Cab,1
+108,Fusion,1
+109,Fusion Plug-in Hybrid,1
+110,Mustang,1
+111,Ranger SuperCab,1
+112,Ranger SuperCrew,1
+113,Transit 250 Cargo Van,1
+114,Transit 350 Passenger Van,1
+115,Transit Connect Cargo Van,1
+116,Transit Connect Passenger Wagon,1
+117,Sprinter 1500 Cargo,23
+118,Sprinter 1500 Passenger,23
+119,Sprinter 2500 Cargo,23
+120,Sprinter 2500 Crew,23
+121,Sprinter 2500 Passenger,23
+122,Sprinter 3500 Cargo,23
+123,Sprinter 3500 Crew,23
+124,Sprinter 3500 XD Crew,23
+125,Sprinter 3500XD Cargo,23
+126,Sprinter 4500 Cargo,23
+127,Sprinter 4500 Crew,23
+128,G70,29
+129,G80,29
+130,G90,29
+131,Acadia,7
+132,Canyon Crew Cab,7
+133,Sierra 1500 Crew Cab,7
+134,Sierra 1500 Double Cab,7
+135,Sierra 1500 Regular Cab,7
+136,Sierra 2500 HD Crew Cab,7
+137,Sierra 3500 HD Crew Cab,7
+138,Terrain,7
+139,Yukon,7
+140,Yukon XL,7
+141,Accord,9
+142,Accord Hybrid,9
+143,Civic,9
+144,Civic Type R,9
+145,Clarity Fuel Cell,9
+146,Clarity Plug-in Hybrid,9
+147,CR-V,9
+148,CR-V Hybrid,9
+149,Fit,9
+150,HR-V,9
+151,Insight,9
+152,Odyssey,9
+153,Passport,9
+154,Pilot,9
+155,Ridgeline,9
+156,Accent,30
+157,Elantra,30
+158,Elantra GT,30
+159,Ioniq Electric,30
+160,Ioniq Hybrid,30
+161,Ioniq Plug-in Hybrid,30
+162,Kona,30
+163,Kona Electric,30
+164,NEXO,30
+165,Palisade,30
+166,Santa Fe,30
+167,Sonata,30
+168,Sonata Hybrid,30
+169,Tucson,30
+170,Veloster,30
+171,Venue,30
+172,Q50,24
+173,Q60,24
+174,QX50,24
+175,QX60,24
+176,QX80,24
+177,E-PACE,13
+178,F-PACE,13
+179,F-TYPE,13
+180,I-PACE,13
+181,XE,13
+182,XF,13
+183,Cherokee,5
+184,Compass,5
+185,Gladiator,5
+186,Grand Cherokee,5
+187,Renegade,5
+188,Wrangler,5
+189,Wrangler Unlimited,5
+190,Cadenza,14
+191,Forte,14
+192,K900,14
+193,Niro,14
+194,Niro EV,14
+195,Niro Plug-in Hybrid,14
+196,Optima,14
+197,Optima Hybrid,14
+198,Optima Plug-in Hybrid,14
+199,Rio,14
+200,Sedona,14
+201,Sorento,14
+202,Soul,14
+203,Sportage,14
+204,Stinger,14
+205,Telluride,14
+206,Defender 110,27
+207,Defender 90,27
+208,Discovery,27
+209,Discovery Sport,27
+210,Range Rover,27
+211,Range Rover Evoque,27
+212,Range Rover Sport,27
+213,Range Rover Velar,27
+214,ES,4
+215,GS,4
+216,GX,4
+217,IS,4
+218,LC,4
+219,LS,4
+220,LX,4
+221,NX,4
+222,RC,4
+223,RX,4
+224,UX,4
+225,Aviator,8
+226,Continental,8
+227,Corsair,8
+228,MKZ,8
+229,Nautilus,8
+230,Navigator,8
+231,Navigator L,8
+232,CX-3,31
+233,CX-30,31
+234,CX-5,31
+235,CX-9,31
+236,MAZDA3,31
+237,MAZDA6,31
+238,MX-5 Miata,31
+239,MX-5 Miata RF,31
+240,A-Class,26
+241,C-Class,26
+242,CLA,26
+243,CLS,26
+244,E-Class,26
+245,G-Class,26
+246,GLA,26
+247,GLB,26
+248,GLC,26
+249,GLE,26
+250,GLS,26
+251,Mercedes-AMG A-Class,26
+252,Mercedes-AMG C-Class,26
+253,Mercedes-AMG CLS,26
+254,Mercedes-AMG GLC,26
+255,Mercedes-AMG GLC Coupe,26
+256,Metris WORKER Cargo,26
+257,Metris WORKER Passenger,26
+258,S-Class,26
+259,SLC,26
+260,Sprinter 1500 Cargo,26
+261,Sprinter 1500 Passenger,26
+262,Sprinter 2500 Cargo,26
+263,Sprinter 2500 Crew,26
+264,Sprinter 2500 Passenger,26
+265,Sprinter 3500 Cargo,26
+266,Sprinter 3500 Crew,26
+267,Sprinter 3500 XD Cargo,26
+268,Sprinter 3500 XD Crew,26
+269,Sprinter 4500 Cargo,26
+270,Sprinter 4500 Crew,26
+271,Clubman,17
+272,Countryman,17
+273,Hardtop 2 Door,17
+274,Hardtop 4 Door,17
+275,Eclipse Cross,20
+276,Mirage,20
+277,Mirage G4,20
+278,Outlander,20
+279,Outlander PHEV,20
+280,Outlander Sport,20
+281,370Z,28
+282,Altima,28
+283,Armada,28
+284,Frontier Crew Cab,28
+285,Frontier King Cab,28
+286,GT-R,28
+287,Kicks,28
+288,LEAF,28
+289,Maxima,28
+290,Murano,28
+291,NV1500 Cargo,28
+292,NV200,28
+293,NV2500 HD Cargo,28
+294,NV3500 HD Cargo,28
+295,NV3500 HD Passenger,28
+296,Pathfinder,28
+297,Rogue,28
+298,Rogue Sport,28
+299,Sentra,28
+300,Titan Crew Cab,28
+301,Titan King Cab,28
+302,TITAN XD Crew Cab,28
+303,Versa,28
+304,718 Boxster,11
+305,718 Cayman,11
+306,718 Spyder,11
+307,911,11
+308,Cayenne,11
+309,Cayenne Coupe,11
+310,Macan,11
+311,Panamera,11
+312,Taycan,11
+313,1500 Classic Crew Cab,22
+314,1500 Classic Quad Cab,22
+315,1500 Crew Cab,22
+316,1500 Quad Cab,22
+317,2500 Crew Cab,22
+318,3500 Crew Cab,22
+319,ProMaster Cargo Van,22
+320,ProMaster City,22
+321,Ascent,33
+322,BRZ,33
+323,Crosstrek,33
+324,Forester,33
+325,Impreza,33
+326,Legacy,33
+327,Outback,33
+328,WRX,33
+329,Model 3,12
+330,Model S,12
+331,Model X,12
+332,Model Y,12
+333,4Runner,16
+334,86,16
+335,Avalon,16
+336,Avalon Hybrid,16
+337,Camry,16
+338,Camry Hybrid,16
+339,C-HR,16
+340,Corolla,16
+341,Corolla Hatchback,16
+342,Corolla Hybrid,16
+343,GR Supra,16
+344,Highlander,16
+345,Highlander Hybrid,16
+346,Land Cruiser,16
+347,Mirai,16
+348,Prius,16
+349,Prius Prime,16
+350,RAV4,16
+351,RAV4 Hybrid,16
+352,Sequoia,16
+353,Sienna,16
+354,Tacoma Access Cab,16
+355,Tacoma Double Cab,16
+356,Tundra CrewMax,16
+357,Tundra Double Cab,16
+358,Yaris,16
+359,Yaris Hatchback,16
+360,Arteon,35
+361,Atlas,35
+362,Atlas Cross Sport,35
+363,Golf,35
+364,Golf GTI,35
+365,Jetta,35
+366,Jetta GLI,35
+367,Passat,35
+368,Tiguan,35
+369,S60,18
+370,S90,18
+371,V60,18
+372,V90,18
+373,XC40,18
+374,XC60,18
+375,XC90,18
