@@ -34,11 +34,26 @@ if __name__ == '__main__':
     db = create_engine(conn_string)
     conn = db.connect()
 
-    # Create tables
+    # Create table
     objects = minio_client.list_objects(minio_bucket)
+    table = pd.DataFrame({'date': [],
+                          'state': [],
+                          'region_code': [],
+                          'region_denomination': [],
+                          'province_code': [],
+                          'province_denomination': [],
+                          'province_abbreviation': [],
+                          'lat': [],
+                          'long': [],
+                          'total_cases': [],
+                          'Note': [],
+                          'nuts_code_1': [],
+                          'nuts_code_2': [],
+                          'nuts_code_3': []})
+    columns = table.columns.values.tolist()
     for obj in objects:
         minio_obj = minio_client.get_object(minio_bucket, obj.object_name)
-        table = pd.read_csv(minio_obj)
-        table_name = obj.object_name.replace('-', '_')
-        table.to_sql(table_name, con=conn, if_exists='replace', index=False)
-        print(table, table_name)
+        table_pd = pd.read_csv(minio_obj)
+        table_pd.columns.values[:] = columns
+        table = pd.concat([table, table_pd])
+    table.to_sql('covid_ita', con=conn, if_exists='replace', index=False)
