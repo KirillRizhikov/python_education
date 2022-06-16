@@ -3,9 +3,12 @@ from pyspark.sql import SparkSession, Window
 import pyspark.sql.types as t
 from pyspark.sql import functions as f
 
+path_to_save = './output/'
+
 
 class FilmDBSchemas:
     """Class contains schemas for the film database"""
+
     def __init__(self):
         self.name_basics_schema = t.StructType(
             [t.StructField('nconst', t.StringType(), True),
@@ -79,54 +82,22 @@ class FilmDB:
         self.path_to_data = './spark_task_data/'
         self.spark = SparkSession.builder.appName('FilmDB').getOrCreate()
 
-        self.name_basics = self.spark.read.csv(
-            self.path_to_data + 'name_basics.tsv',
-            sep='\t',
-            header=True,
-            nullValue='\\N',
-            schema=schema.name_basics_schema)
+        self.name_basics = self.read_from_csv('name_basics.tsv', schema.name_basics_schema)
+        self.title_akas = self.read_from_csv('title_akas.tsv', schema.title_akas_schema)
+        self.title_crew = self.read_from_csv('title_crew.tsv', schema.title_crew_schema)
+        self.title_basics = self.read_from_csv('title_basics.tsv', schema.title_basics_schema)
+        self.title_episode = self.read_from_csv('title_episode.tsv', schema.title_episode_schema)
+        self.title_principals = self.read_from_csv('title_principals.tsv', schema.title_principals_schema)
+        self.title_ratings = self.read_from_csv('title_ratings.tsv', schema.title_ratings_schema)
 
-        self.title_akas = self.spark.read.csv(
-            self.path_to_data + 'title_akas.tsv',
+    def read_from_csv(self, file_name, csv_schema):
+        csv = self.spark.read.csv(
+            self.path_to_data + file_name,
             sep='\t',
             header=True,
             nullValue='\\N',
-            schema=schema.title_akas_schema)
-
-        self.title_crew = self.spark.read.csv(
-            self.path_to_data + 'title_crew.tsv',
-            sep='\t',
-            header=True,
-            nullValue='\\N',
-            schema=schema.title_crew_schema)
-
-        self.title_basics = self.spark.read.csv(
-            self.path_to_data + 'title_basics.tsv',
-            sep='\t',
-            header=True,
-            nullValue='\\N',
-            schema=schema.title_basics_schema)
-
-        self.title_episode = self.spark.read.csv(
-            self.path_to_data + 'title_episode.tsv',
-            sep='\t',
-            header=True,
-            nullValue='\\N',
-            schema=schema.title_episode_schema)
-
-        self.title_principals = self.spark.read.csv(
-            self.path_to_data + 'title_principals.tsv',
-            sep='\t',
-            header=True,
-            nullValue='\\N',
-            schema=schema.title_principals_schema)
-
-        self.title_ratings = self.spark.read.csv(
-            self.path_to_data + 'title_ratings.tsv',
-            sep='\t',
-            header=True,
-            nullValue='\\N',
-            schema=schema.title_ratings_schema)
+            schema=csv_schema)
+        return csv
 
     def get_all_time_top_films(self):
         """Returns all times top 10 films"""
@@ -256,44 +227,44 @@ class FilmDB:
         return self.top_5_of_director
 
 
-film_schema = FilmDBSchemas()
-films = FilmDB(film_schema)
-path_to_save = './output/'
+if __name__ == '__main__':
+    film_schema = FilmDBSchemas()
+    films = FilmDB(film_schema)
 
-# task 1
-films.get_all_time_top_films().write.csv(
-    path_to_save + 'all_time_top_films',
-    header=True,
-    mode='overwrite')
-films.get_last_decade_top_films().write.csv(
-    path_to_save + 'last_decade_top_films',
-    header=True,
-    mode='overwrite')
-films.get_sixtys_top_films().write.csv(
-    path_to_save + 'sixtys_top_films',
-    header=True,
-    mode='overwrite')
+    # task 1
+    films.get_all_time_top_films().write.csv(
+        path_to_save + 'all_time_top_films',
+        header=True,
+        mode='overwrite')
+    films.get_last_decade_top_films().write.csv(
+        path_to_save + 'last_decade_top_films',
+        header=True,
+        mode='overwrite')
+    films.get_sixtys_top_films().write.csv(
+        path_to_save + 'sixtys_top_films',
+        header=True,
+        mode='overwrite')
 
-# task 2
-films.get_top_10_each_genre().write.csv(
-    path_to_save + 'top_10_each_genre',
-    header=True,
-    mode='overwrite')
+    # task 2
+    films.get_top_10_each_genre().write.csv(
+        path_to_save + 'top_10_each_genre',
+        header=True,
+        mode='overwrite')
 
-# task 3
-films.get_top_10_each_genre_decades().write.csv(
-    path_to_save + 'top_10_each_genre_decades',
-    header=True,
-    mode='overwrite')
+    # task 3
+    films.get_top_10_each_genre_decades().write.csv(
+        path_to_save + 'top_10_each_genre_decades',
+        header=True,
+        mode='overwrite')
 
-# task 4
-films.get_top_actors().write.csv(
-    path_to_save + 'top_actors',
-    header=True,
-    mode='overwrite')
+    # task 4
+    films.get_top_actors().write.csv(
+        path_to_save + 'top_actors',
+        header=True,
+        mode='overwrite')
 
-# task 5
-films.get_top_5_of_director().write.csv(
-    path_to_save + 'top_5_of_director',
-    header=True,
-    mode='overwrite')
+    # task 5
+    films.get_top_5_of_director().write.csv(
+        path_to_save + 'top_5_of_director',
+        header=True,
+        mode='overwrite')
