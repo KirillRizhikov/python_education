@@ -1,0 +1,5 @@
+minio~=7.1.8
+pandas~=1.4.2
+psycopg2-binary~=2.9.3
+environ~=1.0
+pyspark~=3.2.1
